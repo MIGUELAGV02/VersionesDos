@@ -1,0 +1,121 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #5aa177 0%, #052e16 100%);
+  color: #f8fafc;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 90vh;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+  color: #bbf7d0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-container {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+  max-width: 480px;
+}
+
+input {
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: 1px solid #15803d;
+  background: #166534;
+  color: #fff;
+  flex: 1;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #4ade80;
+  box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.3);
+}
+
+input::placeholder {
+  color: #bbf7d0;
+}
+
+button {
+  padding: 12px 24px;
+  background: #4ade80;
+  color: #14532d;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #22c55e;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.weather-card {
+  background: rgba(22, 163, 74, 0.9);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #7fc99a;
+  line-height: 1.6;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.description {
+  font-size: 14px;
+  background: #15803d;
+  padding: 8px;
+  border-radius: 6px;
+  margin: 15px 0;
+}
+
+.geo-data {
+  font-size: 13px;
+  color: #bbf7d0;
+}
+
+.weather-data h4 {
+  margin: 5px 0 10px 0;
+  color: #bbf7d0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.success-footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #bbf7d0;
+  font-weight: bold;
+}
